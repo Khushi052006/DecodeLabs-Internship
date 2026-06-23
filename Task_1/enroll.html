@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enroll | SkillHub Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="logo" href="index.html#home" aria-label="SkillHub Pro home">
+        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+        <span>SkillHub Pro</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#courses">Courses</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <button id="theme-toggle" class="icon-button" type="button" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        </button>
+        <button class="hamburger" type="button" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="enroll-hero">
+      <div>
+        <a class="back-link" href="index.html#courses"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back to courses</a>
+        <p class="eyebrow">Course enrollment</p>
+        <h1 id="courseTitle">Web Development</h1>
+        <p id="courseDescription" class="hero-copy">Build responsive websites and interactive web apps with HTML, CSS, JavaScript, and React.</p>
+        <div class="course-highlights" aria-label="Course highlights">
+          <span><i class="fa-solid fa-clock" aria-hidden="true"></i><strong id="courseDuration">12 weeks</strong></span>
+          <span><i class="fa-solid fa-signal" aria-hidden="true"></i><strong id="courseLevel">Beginner to advanced</strong></span>
+          <span><i class="fa-solid fa-certificate" aria-hidden="true"></i><strong>Certificate</strong></span>
+        </div>
+      </div>
+
+      <aside class="enroll-summary">
+        <div class="course-media web" id="courseVisual"><i class="fa-solid fa-code" id="courseIcon" aria-hidden="true"></i></div>
+        <div class="summary-body">
+          <span class="summary-label">Program fee</span>
+          <strong id="courseFee">Rs. 7,999</strong>
+          <p>Includes live sessions, mentor support, projects, and certificate.</p>
+          <a href="#enrollForm" class="btn-primary">Start Enrollment</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="enroll-details">
+      <div class="detail-panel">
+        <p class="eyebrow">You will learn</p>
+        <h2>Course Modules</h2>
+        <ul id="moduleList" class="module-list"></ul>
+      </div>
+
+      <div class="detail-panel">
+        <p class="eyebrow">Next batch</p>
+        <h2>Learning Plan</h2>
+        <div class="plan-list">
+          <div><i class="fa-solid fa-calendar-days" aria-hidden="true"></i><span>Starts every Monday</span></div>
+          <div><i class="fa-solid fa-video" aria-hidden="true"></i><span>Live classes + recorded lessons</span></div>
+          <div><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><span>Portfolio project review</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="enroll-form-section">
+      <div class="section-title">
+        <p class="eyebrow">Reserve your seat</p>
+        <h2>Complete Enrollment</h2>
+      </div>
+
+      <form id="enrollForm" class="enroll-form">
+        <input type="hidden" id="selectedCourse" name="selectedCourse">
+
+        <label for="studentName">Full Name</label>
+        <input type="text" id="studentName" placeholder="Enter your full name">
+
+        <label for="studentEmail">Email Address</label>
+        <input type="email" id="studentEmail" placeholder="Enter your email">
+
+        <label for="studentPhone">Phone Number</label>
+        <input type="tel" id="studentPhone" placeholder="Enter your phone number">
+
+        <label for="learningMode">Preferred Learning Mode</label>
+        <select id="learningMode">
+          <option value="">Select mode</option>
+          <option>Live Online</option>
+          <option>Self Paced</option>
+          <option>Weekend Batch</option>
+        </select>
+
+        <label for="studentGoal">Your Learning Goal</label>
+        <textarea id="studentGoal" rows="4" placeholder="Tell us what you want to achieve"></textarea>
+
+        <button type="submit">Submit Enrollment</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div><h3>SkillHub Pro</h3><p>Empowering learners with modern technology skills.</p></div>
+      <div><h4>Quick Links</h4><ul><li><a href="index.html#home">Home</a></li><li><a href="index.html#courses">Courses</a></li><li><a href="index.html#faq">FAQ</a></li><li><a href="index.html#contact">Contact</a></li></ul></div>
+      <div><h4>Follow Us</h4><div class="social-icons"><a href="#" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a><a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a></div></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 SkillHub Pro. All Rights Reserved.</p></div>
+  </footer>
+
+  <script src="js/enroll.js"></script>
+  <script src="js/darkmode.js"></script>
+</body>
+</html>
