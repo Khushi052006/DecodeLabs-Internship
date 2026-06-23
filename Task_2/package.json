@@ -1,0 +1,16 @@
+{
+  "name": "student-management-api",
+  "version": "1.0.0",
+  "description": "Student Management API using Node.js and Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "author": "Khushi Dhande",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.22.2"
+  },
+  "keywords": []
+}
